@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+<div id="id01"></div>
+-->
+<p id="id01"></p>
+
+<script>
+  /*
+var myArray = [
+  {
+    "display": "JavaScript Tutorial",
+    "url": "https://www.w3schools.com/js/default.asp"
+  },
+  {
+    "display": "HTML Tutorial",
+    "url": "https://www.w3schools.com/html/default.asp"
+  },
+  {
+    "display": "CSS Tutorial",
+    "url": "https://www.w3schools.com/css/default.asp"
+  }
+];
+*/
+var myArray = [
+{"Item": "633600000","Description": "IWH Aqua Plus-35 SS S2","Model": "APT","Price": "1530.00"},
+{"Item": "633600001","Description": "IWH Aqua Plus-45 SS S2","Model": "APT","Price": "1539.00"},
+{"Item": "633600003","Description": "IWH Aqua Plus-85 SS S2","Model": "APT","Price": "2561.00"},
+{"Item": "633600004","Description": "IWH Aqua Plus-105 SS S2","Model": "APT","Price": "3665.00"},
+{"Item": "633600002","Description": "IWH Aqua Plus-55 SS S2","Model": "APT","Price": "2081.00"}
+];
+
+myFunction(myArray);
+
+function myFunction(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i < arr.length; i++) {
+    //out += '<a href="' + arr[i].url + '">' + 
+    //arr[i].display + '</a><br>';
+    out += arr[i].Item + ' ' + arr[i].Description + ' $' + arr[i].Price + '<br>';
+
+  }
+  document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
